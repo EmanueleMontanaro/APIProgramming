@@ -1,3 +1,4 @@
+use std::env::args;
 fn makeBox(a: i32) -> Box<(i32,i32)> { //The arrow is the way to tell the program the type of return value we will have.
     let r = Box::new( (a,1) );
     return r;
@@ -131,4 +132,20 @@ fn main() {
     v.push(4);
     let mut s = &mut v;
     s[1] = 8;
+
+    //Strings
+    let s = "Hello, "; //static memory allocation (stack), immutable
+    let mut p = String::new();
+    p.push_str(s);
+    p.push_str(" World!"); //whole String allocated in heap.
+    let s1 = String::from("some text"); //Other way to define a string
+    let s2 = "some text".to_string(); //Another one (cool)
+
+    let s3 = s2.as_str(); //To retrieve a str type object.
+
+    //Using args
+    let args: Vec<String> = args().skip(1).collect();
+    if args.len() > 0 {
+        println!("{}", args[0]);
+    }
 }
