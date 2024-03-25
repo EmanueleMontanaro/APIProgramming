@@ -1,0 +1,1 @@
+/Users/emanuelemontanaro/Desktop/APIProgramming/exercises/E0/04_primitive_types/primitive_types2/target/debug/primitive_types2: /Users/emanuelemontanaro/Desktop/APIProgramming/exercises/E0/04_primitive_types/primitive_types2/src/main.rs
