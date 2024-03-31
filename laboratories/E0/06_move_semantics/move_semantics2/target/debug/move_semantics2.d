@@ -1,0 +1,1 @@
+/Users/emanuelemontanaro/Desktop/APIProgramming/exercises/E0/06_move_semantics/move_semantics2/target/debug/move_semantics2: /Users/emanuelemontanaro/Desktop/APIProgramming/exercises/E0/06_move_semantics/move_semantics2/src/main.rs
