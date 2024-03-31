@@ -1,1 +1,0 @@
-C:\Users\emanu\Documents\GitHub\APIProgramming\exercises\E0\01_variables\variables4\target\debug\variables4.exe: C:\Users\emanu\Documents\GitHub\APIProgramming\exercises\E0\01_variables\variables4\src\main.rs

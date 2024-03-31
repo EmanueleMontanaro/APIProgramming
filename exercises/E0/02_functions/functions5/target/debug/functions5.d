@@ -1,1 +1,0 @@
-C:\Users\emanu\Documents\GitHub\APIProgramming\exercises\E0\02_functions\functions5\target\debug\functions5.exe: C:\Users\emanu\Documents\GitHub\APIProgramming\exercises\E0\02_functions\functions5\src\main.rs
