@@ -1,5 +1,10 @@
 use std::{char, str};
-use std::env::args;
+use clap::parser;
+#[derive(Parser, Debug)]
+struct Args {
+    // input string
+    slug_in: String,
+}
 
 fn slugify(s: &str) -> String {
     let mut result = String::new();
@@ -38,7 +43,7 @@ fn conv(c: char) -> char {
 }
 
 fn main(){
-    let args: Vec<String> = args().collect();
+    let args = Args::parse();
     let param:&str = &args[1];
     let result = slugify(param);
     println!("{}",result);
