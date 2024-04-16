@@ -1,9 +1,11 @@
 use std::{char, str};
-use clap::parser;
+use clap::Parser;
 #[derive(Parser, Debug)]
 struct Args {
     // input string
     slug_in: String,
+    repeat: i32,
+    verbose: bool,
 }
 
 fn slugify(s: &str) -> String {
@@ -44,9 +46,11 @@ fn conv(c: char) -> char {
 
 fn main(){
     let args = Args::parse();
-    let param:&str = &args[1];
-    let result = slugify(param);
-    println!("{}",result);
+    let param:&str = &args.slug_in;
+    for i in 0..args.repeat {
+        let result = slugify(param);
+        println!("{}",result);
+    }
 }
 
 #[cfg(test)]
